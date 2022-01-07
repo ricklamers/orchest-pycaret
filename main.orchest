@@ -1,0 +1,97 @@
+{
+    "name": "Main",
+    "parameters": {},
+    "settings": {
+        "auto_eviction": false,
+        "data_passing_memory_size": "1GB"
+    },
+    "steps": {
+        "bfc5663a-bccf-409b-aae5-ce0a1a67d5bd": {
+            "environment": "a4349b5f-e0fe-409f-a80c-15fdcf182ba7",
+            "file_path": "train-test-split.ipynb",
+            "incoming_connections": [
+                "e0ca24bc-eabd-416a-86e5-248a772cbd9b"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    329.5,
+                    278.25
+                ]
+            },
+            "parameters": {},
+            "title": "Train test split",
+            "uuid": "bfc5663a-bccf-409b-aae5-ce0a1a67d5bd"
+        },
+        "e0ca24bc-eabd-416a-86e5-248a772cbd9b": {
+            "environment": "a4349b5f-e0fe-409f-a80c-15fdcf182ba7",
+            "file_path": "load.ipynb",
+            "incoming_connections": [],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    66,
+                    278.25000000000006
+                ]
+            },
+            "parameters": {
+                "dataset": "insurance"
+            },
+            "title": "Load",
+            "uuid": "e0ca24bc-eabd-416a-86e5-248a772cbd9b"
+        },
+        "e9b0eab4-cf1c-4247-9515-ab9817c78a68": {
+            "environment": "a4349b5f-e0fe-409f-a80c-15fdcf182ba7",
+            "file_path": "compare-models.ipynb",
+            "incoming_connections": [
+                "bfc5663a-bccf-409b-aae5-ce0a1a67d5bd"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    593,
+                    189
+                ]
+            },
+            "parameters": {},
+            "title": "Compare models",
+            "uuid": "e9b0eab4-cf1c-4247-9515-ab9817c78a68"
+        },
+        "eca429f8-ce10-4683-aea7-132a32a8e1a3": {
+            "environment": "a4349b5f-e0fe-409f-a80c-15fdcf182ba7",
+            "file_path": "predict-on-test.ipynb",
+            "incoming_connections": [
+                "bfc5663a-bccf-409b-aae5-ce0a1a67d5bd",
+                "e9b0eab4-cf1c-4247-9515-ab9817c78a68"
+            ],
+            "kernel": {
+                "display_name": "Python 3",
+                "name": "python"
+            },
+            "meta_data": {
+                "hidden": false,
+                "position": [
+                    856.5,
+                    278.25
+                ]
+            },
+            "parameters": {},
+            "title": "Predict on test",
+            "uuid": "eca429f8-ce10-4683-aea7-132a32a8e1a3"
+        }
+    },
+    "uuid": "e5251b4b-184c-4420-9292-92bc3f1a5951",
+    "version": "1.0.0"
+}
